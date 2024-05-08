@@ -1,0 +1,715 @@
+{
+    "abcd": {
+        "registers": [
+            {
+                "address": "0x8000",
+                "n": 1,
+                "note": "Enable extra word on x730, x725 and x751",
+                "start": 17,
+                "value": 1
+            },
+            {
+                "address": "0x8000",
+                "n": 1,
+                "note": "Enable auto-flush of data on x730, x725 and x751",
+                "start": 0,
+                "value": 1
+            },
+            {
+                "address": "0x8000",
+                "n": 1,
+                "note": "Set trigger out bidirectional",
+                "start": 2,
+                "value": 1
+            },
+            {
+                "address": "0x8000",
+                "n": 1,
+                "note": "Dual Trace mode (1: enable, 0: disable)",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x8000",
+                "n": 2,
+                "note1": "Set in the Analog Probe the trace to show",
+                "note2": "With Dual Trace disabled: 0: input signal; 1: CFD signal",
+                "note3": "With Dual Trace enabled there are more options",
+                "start": 12,
+                "value": 0
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch0 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1084",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x103C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 80
+            },
+            {
+                "address": "0x103C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1084",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x103C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1084",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1080",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1044",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 150
+            },
+            {
+                "address": "0x1080",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch1 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1184",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x113C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 80
+            },
+            {
+                "address": "0x113C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1184",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x113C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1184",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1180",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1144",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 10
+            },
+            {
+                "address": "0x1180",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch2 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1284",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x123C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 25
+            },
+            {
+                "address": "0x123C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1284",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x123C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1284",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1280",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1244",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 100
+            },
+            {
+                "address": "0x1280",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch3 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1384",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x133C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 25
+            },
+            {
+                "address": "0x133C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1384",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x133C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1384",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1380",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1344",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 10
+            },
+            {
+                "address": "0x1380",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch4 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1484",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x143C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 25
+            },
+            {
+                "address": "0x143C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1484",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x143C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1484",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1480",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1444",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 10
+            },
+            {
+                "address": "0x1480",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch5 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1584",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x153C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 25
+            },
+            {
+                "address": "0x153C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1584",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x153C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1584",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1580",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1544",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 10
+            },
+            {
+                "address": "0x1580",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch6 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1684",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x163C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 25
+            },
+            {
+                "address": "0x163C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1684",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x163C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1684",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1680",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1644",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 10
+            },
+            {
+                "address": "0x1680",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {
+                "note1": "#####################################################",
+                "note2": "# Section: Ch7 configuration",
+                "note3": "#####################################################"
+            },
+            {
+                "address": "0x1784",
+                "n": 1,
+                "note": "Enable smoothing on the signal before trigger determination",
+                "start": 11,
+                "value": 0
+            },
+            {
+                "address": "0x173C",
+                "n": 8,
+                "note": "Delay for DCFD on ch (Delta t [ns] / 2 ns)",
+                "start": 0,
+                "value": 80
+            },
+            {
+                "address": "0x173C",
+                "n": 2,
+                "note": "Fraction for DCFD on ch (0: 25%, 1: 50%, 2: 75%, 3: 100%)",
+                "start": 8,
+                "value": 1
+            },
+            {
+                "address": "0x1784",
+                "n": 4,
+                "note": "Smoothing for DCFD on ch (2^n points)",
+                "start": 12,
+                "value": 4
+            },
+            {
+                "address": "0x173C",
+                "n": 2,
+                "note": "Select zero-crossing interpolation points on ch (0: first two points, 1: second ones, 2: third ones, 3: fourth ones)",
+                "start": 10,
+                "value": 1
+            },
+            {
+                "address": "0x1784",
+                "n": 3,
+                "note": "Enable fine timestamp in extra word on ch",
+                "start": 8,
+                "value": 2
+            },
+            {
+                "address": "0x1780",
+                "n": 1,
+                "note": "Enable DCFD on ch",
+                "start": 6,
+                "value": 1
+            },
+            {
+                "address": "0x1744",
+                "n": 16,
+                "note": "Set a threshold on the charge (qlong) value",
+                "start": 0,
+                "value": 10
+            },
+            {
+                "address": "0x1780",
+                "n": 1,
+                "note": "Enable charge threshold",
+                "start": 25,
+                "value": 1
+            },
+            {}
+        ]
+    },
+    "dgtzs": {
+        "BoardName": "DT5730",
+        "ChannelEnableMask": 255,
+        "DPPAcquisitionMode": 1,
+        "ShowGates": 1,
+        "ch0": {
+            "BSLSamples": 64,
+            "ChannelName": "CLLBC 1",
+            "ChargeSensitivity": 2,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 1000,
+            "PreGate": 140,
+            "PreTrigger": 150,
+            "PulsePolarity": 1,
+            "ScopeSamples": 1100,
+            "ShortGate": 400,
+            "Threshold": 17,
+            "TriggerMode": 0
+        },
+        "ch1": {
+            "BSLSamples": 64,
+            "ChannelName": "CLLBC 2",
+            "ChargeSensitivity": 2,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 1000,
+            "PreGate": 140,
+            "PreTrigger": 150,
+            "PulsePolarity": 1,
+            "ScopeSamples": 1100,
+            "ShortGate": 400,
+            "Threshold": 10,
+            "TriggerMode": 0
+        },
+        "ch2": {
+            "BSLSamples": 64,
+            "ChannelName": "The beast",
+            "ChargeSensitivity": 1,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 120,
+            "PreGate": 75,
+            "PreTrigger": 110,
+            "PulsePolarity": 1,
+            "ScopeSamples": 200,
+            "ShortGate": 40,
+            "Threshold": 10,
+            "TriggerMode": 0
+        },
+        "ch3": {
+            "BSLSamples": 64,
+            "ChannelName": "LaBr 19.2",
+            "ChargeSensitivity": 2,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 120,
+            "PreGate": 75,
+            "PreTrigger": 110,
+            "PulsePolarity": 1,
+            "ScopeSamples": 200,
+            "ShortGate": 40,
+            "Threshold": 10,
+            "TriggerMode": 0
+        },
+        "ch4": {
+            "BSLSamples": 64,
+            "ChannelName": "LaBr 19.4",
+            "ChargeSensitivity": 2,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 120,
+            "PreGate": 75,
+            "PreTrigger": 110,
+            "PulsePolarity": 1,
+            "ScopeSamples": 200,
+            "ShortGate": 40,
+            "Threshold": 10,
+            "TriggerMode": 0
+        },
+        "ch5": {
+            "BSLSamples": 64,
+            "ChannelName": "LaBr 19.6",
+            "ChargeSensitivity": 2,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 120,
+            "PreGate": 75,
+            "PreTrigger": 110,
+            "PulsePolarity": 1,
+            "ScopeSamples": 200,
+            "ShortGate": 40,
+            "Threshold": 10,
+            "TriggerMode": 0
+        },
+        "ch6": {
+            "BSLSamples": 64,
+            "ChannelName": "LaBr 19.8",
+            "ChargeSensitivity": 2,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 120,
+            "PreGate": 75,
+            "PreTrigger": 110,
+            "PulsePolarity": 1,
+            "ScopeSamples": 1100,
+            "ShortGate": 40,
+            "Threshold": 10,
+            "TriggerMode": 0
+        },
+        "ch7": {
+            "BSLSamples": 64,
+            "ChannelName": "CLLBC 3",
+            "ChargeSensitivity": 2,
+            "DCOffsetPercent": -40,
+            "DynamicRange": 1,
+            "LongGate": 1000,
+            "PreGate": 140,
+            "PreTrigger": 150,
+            "PulsePolarity": 1,
+            "ScopeSamples": 1100,
+            "ShortGate": 400,
+            "Threshold": 15,
+            "TriggerMode": 0
+        },
+        "zzz": null
+    }
+}
