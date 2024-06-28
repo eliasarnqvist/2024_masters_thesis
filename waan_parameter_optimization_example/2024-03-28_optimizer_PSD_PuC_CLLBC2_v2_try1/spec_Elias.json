@@ -1,0 +1,28 @@
+{
+    "channels": [
+        {
+            "id": 1,
+            "bins_E": 500,
+            "min_E": 25000,
+            "max_E": 60000,
+            "bins_PSD": 400,
+            "min_PSD": 0,
+            "max_PSD": 20000
+        }
+    ],
+    "time_decay": {
+        "enable": false,
+        "tau": 3,
+        "counts_minimum": 0.0001
+    },
+    "disable_bidimensional_plot": false,
+    "spectra_type": "qlong",
+    "spectra_type_possible_value0": "qlong",
+    "spectra_type_possible_value1": "qshort",
+    "spectra_type_possible_value2": "baseline",
+    "PSD_type": "baseline_vs_energy",
+    "PSD_type_possible_value0": "qtail_vs_energy",
+    "PSD_type_possible_value1": "qshort_vs_energy",
+    "PSD_type_possible_value2": "qlong_vs_energy",
+    "PSD_type_possible_value3": "baseline_vs_energy"
+}

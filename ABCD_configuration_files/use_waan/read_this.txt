@@ -1,0 +1,2 @@
+ScopeSamples can be reduced from 5000 to about 1500 for ch0, 1, 6, and 7 
+If you use 5000 you cannot do coincidences between ch0+ch1 and ch6+ch7 

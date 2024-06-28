@@ -1,0 +1,30 @@
+{
+    "ns_per_sample": 0.001953125,
+    "channels": [
+        {
+            "id": 1,
+            "reference": true,
+            "note": "LaBr"
+        },
+        {
+            "id": [
+                2
+            ],
+            "reference": false,
+            "bins_ToF": 400,
+            "min_ToF": -100,
+            "max_ToF": 100,
+            "bins_E": 512,
+            "min_E": 0,
+            "max_E": 40960,
+            "note": "CeBr"
+        },
+        {}
+    ],
+    "time_decay": {
+        "enable": false,
+        "tau": 3,
+        "counts_minimum": 0.0001
+    },
+    "disable_bidimensional_plots": false
+}

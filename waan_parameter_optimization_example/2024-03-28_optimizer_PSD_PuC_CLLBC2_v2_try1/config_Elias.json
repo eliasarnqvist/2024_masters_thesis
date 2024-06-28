@@ -1,0 +1,241 @@
+{
+    "module": "waan",
+    "forward_waveforms": true,
+    "enable_additional": true,
+    "high_water_mark": "no limit",
+    "channels": [
+        {
+            "id": 0,
+            "name": "CLLBC 1",
+            "HV": -810,
+            "enabled": false,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD_Elias.so"
+            },
+            "user_config": {
+                "baseline_samples": 64,
+                "smooth_samples": 24,
+                "fraction": 0.3,
+                "delay": 145,
+                "zero_crossing_samples": 8,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 160,
+                "short_gate": 150,
+                "long_gate": 1000,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.09,
+                "energy_threshold": 25000,
+                "PSD_min": -10,
+                "PSD_max": 100,
+                "reg1_start": 10,
+                "reg1_stop": 100,
+                "reg2_start": 100,
+                "reg2_stop": 500,
+                "zzz": null
+            }
+        },
+        {
+            "id": 1,
+            "name": "CLLBC 2",
+            "HV": -760,
+            "enabled": true,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD_Elias.so"
+            },
+            "user_config": {
+                "baseline_samples": 64,
+                "smooth_samples": 16,
+                "fraction": 0.1,
+                "delay": 80,
+                "zero_crossing_samples": 2,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 95,
+                "short_gate": 150,
+                "long_gate": 1000,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.09,
+                "energy_threshold": 200,
+                "PSD_min": -10,
+                "PSD_max": 100,
+                "reg1_start": 10,
+                "reg1_stop": 100,
+                "reg2_start": 100,
+                "reg2_stop": 500,
+                "zzz": null
+            }
+        },
+        {
+            "id": 2,
+            "name": "The beast",
+            "HV": 700,
+            "enabled": false,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD.so"
+            },
+            "user_config": {
+                "baseline_samples": 30,
+                "smooth_samples": 16,
+                "fraction": 0.5,
+                "delay": 30,
+                "zero_crossing_samples": 4,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 45,
+                "short_gate": 10,
+                "long_gate": 120,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.2,
+                "energy_threshold": 0,
+                "PSD_min": -0.3,
+                "PSD_max": 1.2,
+                "zzz": null
+            }
+        },
+        {
+            "id": 3,
+            "name": "LaBr3:Ce",
+            "enabled": false,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD.so"
+            },
+            "user_config": {
+                "baseline_samples": 30,
+                "smooth_samples": 16,
+                "fraction": 0.4,
+                "delay": 50,
+                "zero_crossing_samples": 2,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 60,
+                "short_gate": 10,
+                "long_gate": 120,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.2,
+                "energy_threshold": 0,
+                "PSD_min": -0.3,
+                "PSD_max": 1.2,
+                "zzz": null
+            }
+        },
+        {
+            "id": 4,
+            "name": "LaBr3:Ce,Sr",
+            "enabled": false,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD.so"
+            },
+            "user_config": {
+                "baseline_samples": 30,
+                "smooth_samples": 10,
+                "fraction": 0.3,
+                "delay": 30,
+                "zero_crossing_samples": 8,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 45,
+                "short_gate": 10,
+                "long_gate": 120,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.2,
+                "energy_threshold": 0,
+                "PSD_min": -0.3,
+                "PSD_max": 1.2,
+                "zzz": null
+            }
+        },
+        {
+            "id": 5,
+            "name": "LaBr3:Ce,Sr",
+            "enabled": false,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD.so"
+            },
+            "user_config": {
+                "baseline_samples": 30,
+                "smooth_samples": 10,
+                "fraction": 0.3,
+                "delay": 30,
+                "zero_crossing_samples": 8,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 45,
+                "short_gate": 10,
+                "long_gate": 120,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.2,
+                "energy_threshold": 0,
+                "PSD_min": -0.3,
+                "PSD_max": 1.2,
+                "zzz": null
+            }
+        },
+        {
+            "id": 6,
+            "name": "LaBr3:Ce",
+            "enabled": false,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD.so"
+            },
+            "user_config": {
+                "baseline_samples": 30,
+                "smooth_samples": 16,
+                "fraction": 0.4,
+                "delay": 50,
+                "zero_crossing_samples": 2,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 60,
+                "short_gate": 10,
+                "long_gate": 120,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.2,
+                "energy_threshold": 0,
+                "PSD_min": -0.3,
+                "PSD_max": 1.2,
+                "zzz": null
+            }
+        },
+        {
+            "id": 7,
+            "name": "CLLBC 3",
+            "enabled": false,
+            "user_libraries": {
+                "timestamp": "src/libCFD.so",
+                "energy": "src/libPSD_Elias.so"
+            },
+            "user_config": {
+                "baseline_samples": 64,
+                "smooth_samples": 12,
+                "fraction": 0.3,
+                "delay": 90,
+                "zero_crossing_samples": 2,
+                "fractional_bits": 10,
+                "disable_shift": true,
+                "pregate": 105,
+                "short_gate": 150,
+                "long_gate": 1000,
+                "pulse_polarity": "negative",
+                "integrals_scaling": 0.14,
+                "energy_threshold": 100,
+                "PSD_min": -10,
+                "PSD_max": 100,
+                "reg1_start": 10,
+                "reg1_stop": 100,
+                "reg2_start": 100,
+                "reg2_stop": 500,
+                "zzz": null
+            }
+        },
+        {}
+    ],
+    "zzz": null
+}
