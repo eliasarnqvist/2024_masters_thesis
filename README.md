@@ -1,4 +1,5 @@
-# 2024_masters_thesis_Elias
+# 2024_masters_thesis
 
-For Elias master's thesis
+Some code for my master's thesis to share with a collegue
+
 Spring 2024
